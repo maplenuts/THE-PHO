@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="더포">
+    <meta name="keywords" content="베트남 요리 전문점, 고객들이 인정한 맛!" />
+    <meta name="description" content="베트남 요리 전문점, 고객들이 인정한 맛!" />
+    <meta property="og:description" content="베트남 요리 전문점, 고객들이 인정한 맛!">
+
+    <meta name="fb:card" content="summary">
+    <meta name="fb:title" content="더포">
+    <meta name="fb:description" content="베트남 요리 전문점, 고객들이 인정한 맛!">
+    <meta name="fb:domain" content="더포">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="더포">
+    <meta name="twitter:description" content="베트남 요리 전문점, 고객들이 인정한 맛!">
+    <meta name="twitter:domain" content="더포">
+
+    <title>the pho</title>
+
+    <!-- favicon -->
+
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js" type="text
+/javascript"></script>
+    <script src="js/plugin/splitting.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 헤더 영역 -->
+        <header id="header">
+            <h1>
+                <a href="#"><img src="img/logo_thepho.png" alt="더포 로고"></a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#brand" data-splitting>본사소개</a></li>
+                    <li><a href="#since" data-splitting>더포소개</a></li>
+                    <li><a href="#rec_intro" data-splitting>고객의 선택</a></li>
+                    <li><a href="#why" data-splitting>POINT 6</a></li>
+                    <li><a href="#" data-splitting>사회공헌활동</a></li>
+                    <li><a href="#" data-splitting>창업안내</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn-contact">창업문의</a>
+        </header>
+
+        <main id="main">
+            <section id="main_banner">
+                <div class="main_text">
+                    <h2 data-aos="fade-up" data-aos-duration="1000">고객님들이 선택한<br>
+                        세상에 단 하나뿐인 맛, <span>더포</span>
+                    </h2>
+                    <div class="main_circle" data-aos="fade-up" data-aos-duration="1000">
+                        <img class="circleAni" src="img/circleTxt.png" alt="">
+                        <img src="img/circleArrow.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper mainSwiper" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p>나와 가장 가까운 베트남<br>
+                                더포에서 만나세요!
+                            </p>
+                            <img src="img/visual_쌀국수.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>나와 가장 가까운 베트남<br>
+                                더포에서 만나세요!
+                            </p>
+                            <img src="img/visual_껌보승(왕갈비).JPG" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>나와 가장 가까운 베트남<br>
+                                더포에서 만나세요!
+                            </p>
+                            <img src="img/visual_월남쌈.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+
+            <section id="main_visual">
+                <div class="dim"></div>
+                <video src="video/video_cooking.mp4" muted autoplay loop></video>
+                <img data-aos="fade-up" data-aos-duration="1000" src="img/txt_the only.png" alt="">
+                <p data-aos="fade-up" data-aos-duration="1500">더포(THE PHO)는 베트남 음식 전문점으로,<br>
+                    현지에서의 깊은 그 맛을 계승하면서도<br>
+                    나아가 한국인의 입맛에도 거부감이 없도록 재해석 된<br>
+                    유일한 맛을 선보입니다.<br>
+                    <br>
+                    ‘세상에 하나밖에 없는 맛’을 모토로 고객들에게 신선한 재료와<br>
+                    더포만의 차별화된 육수와 소스로 특별한 베트남 음식을 제공합니다.
+                </p>
+            </section>
+
+            <section id="brand">
+                <ul class="brandBtn" data-aos="fade-down" data-aos-duration="1500">
+                    <li class="active">대표 김현규 소개</li>
+                    <li>(주)루호 소개</li>
+                </ul>
+                <div class="brandInner">
+                    <div class="brandCeo">
+                        <div class="brandTxt" data-aos="fade-right" data-aos-duration="1500">
+                            <img class="brandLogo" src="img/logo_루호(베이지).png" alt="">
+                            <h3>아이의 이름을 걸고 하는 사업,<br>
+                                함부로 할 수 없지요.
+                            </h3>
+                            <p>안녕하세요, 대표 김현규입니다.<br>
+                                저는 배를 타고 세계 곳곳을 누비며 현지에서 음식을 배우면서<br>
+                                '장사'로 성공하고 싶다는 일념 하나로 [더포]를 창업하였습니다.<br>
+                                그 가운데 많은 고객님들의 사랑 덕분에 이렇게 프랜차이즈 사업을 시작하게 되었습니다.<br>
+                                <br>
+                                루아는 제 아이의 이름입니다.<br>
+                                그만큼 정직하게, 책임감을 가지고 임하고 있습니다.<br>
+                                <br>
+                                저는 사업가가 아니라, 손님들과 마주하며 대접하는 장사꾼입니다.<br>
+                                저희 음식을 좋아해주시는 모든 분들과 소통하고,<br>
+                                저희 공간에서 좋은 추억을 만들 수 있는 그 과정이 너무나 매력적이기 때문입니다.<br>
+                                <br>
+                                점주님들과 상생하고 고객님들과 함께<br>
+                                오래가는 브랜드가 되었으면 좋겠습니다.
+                            </p>
+                            <span>대표 김현규</span>
+                        </div>
+                        <img data-aos="fade-left" data-aos-duration="1500" src="img/대표_김현규.png" alt="">
+                    </div>
+                    <div class="brandLuho">
+                        <div class="brandTxt" data-aos="fade-right" data-aos-duration="1500">
+                            <img class="brandLogo" src="img/logo_루호(베이지).png" alt="">
+                            <h3>마음을 나누는 동료이자<br>
+                                함께 가는 사업파트너<br>
+                                (주)루호입니다.
+                            </h3>
+                            <p>㈜루호는 회사의 이익만을 위해 창업주의 미래를 등한시하여<br>
+                                무분별하게 가맹점 수만을 늘리는 프랜차이즈 회사가 아닙니다.<br>
+                                <br>
+                                저희로 하여금 고객이 즐겁고 파트너가 행복할 수 있는 회사가 되기를 추구합니다.<br>
+                                무리한 확장보다 알찬 성장을 추구하기에 100% 기술 전수를 지원하고<br>
+                                가맹점주 직접 운영을 가맹계약의 기본원칙으로 하고 있습니다.<br>
+                                <br>
+                                소비자들의 변화하는 니즈에 한발 앞서 준비할 수 있는 개척정신과<br>
+                                축적된 경험 및 노하우를 바탕으로 고객과 가맹점의 소중한 목소리에<br>
+                                귀 기울이며 소통의 중요성을 강조하고 미래를 함께하는<br>
+                                동반자가 될 것을 약속드립니다.
+                            </p>
+                            <span>㈜루호 일동</span>
+                        </div>
+                        <img data-aos="fade-left" data-aos-duration="1500" src="img/루아패밀리.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section id="story">
+
+                <div class="title">
+                    <p>김현규 대표가 직접 전하는</p>
+                    <h3>더포 성공스토리</h3>
+                </div>
+                <div class="video">
+                    <iframe width="1280" height="720"
+                        src="https://www.youtube.com/embed/GoZEZkBGKuQ?si=LCHnGN2XpMh4gtmn" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <div class="wrapper">
+                <div class="marquee-text">
+                    <div class="marquee-text-track">
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                    </div>
+                </div>
+            </div>
+
+            <section id="since">
+                <div class="sinceInner">
+                    <b class="bang">SINCE 2012</b>
+                    <p>더포는 고객님들의 사랑으로<br>
+                        12년간 꾸준히 성장한 브랜드입니다.
+                    </p>
+                    <div class="sinceArrow">
+                        <img data-aos="fade-right" data-aos-duration="500" src="img/arrow-5years.png" alt="">
+                        <img data-aos="fade-right" data-aos-duration="1900" src="img/arrow-12years.png" alt="">
+                    </div>
+                </div>
+                <div class="sinceBar">
+                    <p data-aos="fade-up" data-aos-duration="1000">이익을 위해 시작한 브랜드가 아닙니다</p>
+                </div>
+            </section>
+
+            <section id="how">
+                <div class="how">
+                    <div class="how-L" data-aos="fade-right" data-aos-duration="1000">
+                        <video src="video/video_server.mp4" autoplay loop muted></video>
+                    </div>
+                    <div class="how-R" data-aos="fade-left" data-aos-duration="1000">
+                        <h2>경영진이 직접 서빙하고<br>
+                            고객님들과 마주하며<br>
+                            점주님들과 소통합니다.
+                        </h2>
+                        <p>더포는 ‘장사’로 성공하고 싶었던 김현규 대표의<br>
+                            열정과 사랑이 담긴 첫 번째 브랜드입니다.<br>
+                            <br>
+                            현재도 직영점을 지속적으로 운영하고 있으며,<br>
+                            직접 장사를 하실 분들만 모셔서<br>
+                            그 동안 쌓인 경험과 노하우를 전수해드리고<br>
+                            장사를 잘 할 수 있도록 도와드리며 함께 성장중입니다.<br>
+                            <br>
+                            <b>수익을 목적으로 직영점 운영 경험조차 부실한<br>
+                                우후죽순 생겨나는 프랜차이즈 ‘사업’과 다릅니다.
+                            </b>
+                        </p>
+                    </div>
+                </div>
+                <div class="how">
+                    <div class="how-L2" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="L2-txt">
+                            <p>25%</p>
+                        </div>
+                        <img src="img/graph_donut.png" alt="">
+                    </div>
+                    <div class="how-R" data-aos="fade-left" data-aos-duration="1000">
+                        <h2>정직하게 쌓아올린<br>
+                            더포의 안정적인 평균 매출과<br>
+                            순이익
+                        </h2>
+                        <p>많은 곳에서 고수익의 일매출로 화려하게 말하지만,<br>
+                            단발성 일매출로 눈속임하지 않겠습니다.<br>
+                            <br>
+                            팬데믹의 중심지였던 대구에서<br>
+                            현재까지도 폐점률은 1% 미만!<br>
+                            <br>
+                            할 수 있다는 무한 긍정 마인드로<br>
+                            어려움을 딛고 더욱 단단한 수익구조를 만들었습니다.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="how">
+                    <div class="how-L3" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="L3-txt">
+                            <span>베트남 요식업계 성장률</span>
+                            <div class="count"><span class="num">20</span>%+</div>
+                        </div>
+                        <img class="L3-graph" src="img/graph_box.png" alt="">
+                        <img data-aos="fade-up-right" data-aos-duration="2000" class="L3-arrow"
+                            src="img/graph_arrow.png" alt="">
+                    </div>
+                    <div class="how-R" data-aos="fade-left" data-aos-duration="1000">
+                        <h2>언제나, 누구나!<br>
+                            산뜻하고 건강한 음식으로<br>
+                            부담없이 즐길 수 있는 더포<br>
+                        </h2>
+                        <p>자극적인 음식들이 유행하고 난무하는 시대,<br>
+                            그 가운데 소비자들은 건강하고 몸에 좋은 것들에<br>
+                            더욱 많은 관심을 가지고 있습니다.<br>
+                            <br>
+                            건강 의식의 증가, 식단 선호도의 변화 등<br>
+                            국내는 물론 세계적으로도 베트남 음식 시장은<br>
+                            대폭 성장하고 있으며 각광받고 있습니다.<br>
+                            <br>
+                            더포는 대한민국에 쌀국수 시장이 대중화의 시초로 시작하여<br>
+                            현재는 누구나 부담없이 건강한 음식을 접할 수 있는<br>
+                            브랜드로 입지를 다졌습니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="rec_intro">
+                <ul class="intro-txt">
+                    <li data-scrollmagic-pin-spacer><img src="img/txt_message.png" alt=""></li>
+                    <li data-scrollmagic-pin-spacer><img src="img/txt_message (2).png" alt=""></li>
+                    <li data-scrollmagic-pin-spacer><img src="img/txt_message (3).png" alt=""></li>
+                    <li data-scrollmagic-pin-spacer><img src="img/txt_message (4).png" alt=""></li>
+                </ul>
+            </section>
+
+            <section id="recommend">
+                <div class="rollingY fadeout-Y">
+                    <div class="rolling-img2 ">
+                        <div class="rolling-img-track">
+                            <img src="img/image 52review.png" alt="">
+                            <img src="img/image 53review.png" alt="">
+                            <img src="img/image 54review.png" alt="">
+                            <img src="img/image 55review.png" alt="">
+                            <img src="img/image 56review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
+                            <img src="img/image 52review.png" alt="">
+                            <img src="img/image 53review.png" alt="">
+                            <img src="img/image 54review.png" alt="">
+                            <img src="img/image 55review.png" alt="">
+                            <img src="img/image 56review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
+                            <img aria-hidden="true" src="img/image 52review.png" alt="">
+                            <img aria-hidden="true" src="img/image 53review.png" alt="">
+                            <img aria-hidden="true" src="img/image 54review.png" alt="">
+                            <img aria-hidden="true" src="img/image 55review.png" alt="">
+                            <img aria-hidden="true" src="img/image 56review.png" alt="">
+                            <img aria-hidden="true" src="img/image 57review.png" alt="">
+                            <img aria-hidden="true" src="img/image 52review.png" alt="">
+                            <img aria-hidden="true" src="img/image 53review.png" alt="">
+                            <img aria-hidden="true" src="img/image 54review.png" alt="">
+                            <img aria-hidden="true" src="img/image 55review.png" alt="">
+                            <img aria-hidden="true" src="img/image 56review.png" alt="">
+                            <img aria-hidden="true" src="img/image 57review.png" alt="">
+                        </div>
+                    </div>
+                    <div class="rolling-img">
+                        <div class="rolling-img-track">
+                            <img src="img/image 61review.png" alt="">
+                            <img src="img/image 60review.png" alt="">
+                            <img src="img/image 59eview.png" alt="">
+                            <img src="img/image 58review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
+                            <img src="img/image 61review.png" alt="">
+                            <img src="img/image 60review.png" alt="">
+                            <img src="img/image 59eview.png" alt="">
+                            <img src="img/image 58review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
+                            <img aria-hidden="true" src="img/image 61review.png" alt="">
+                            <img aria-hidden="true" src="img/image 60review.png" alt="">
+                            <img aria-hidden="true" src="img/image 59review.png" alt="">
+                            <img aria-hidden="true" src="img/image 58review.png" alt="">
+                            <img aria-hidden="true" src="img/image 61review.png" alt="">
+                            <img aria-hidden="true" src="img/image 60review.png" alt="">
+                            <img aria-hidden="true" src="img/image 59review.png" alt="">
+                            <img aria-hidden="true" src="img/image 58review.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rec_text" data-aos="flip-up" data-aos-duration="1000">
+                    <h2><span>더포</span>는 고객님들이<br>
+                        선택해주셨습니다
+                    </h2>
+                    <p>고객님들의 리뷰로 증명하는 더포입니다.<br>
+                        더포를 믿고 방문해주시는<br>
+                        수많은 고객님들이 있습니다.
+                    </p>
+                </div>
+
+                <div class="rollingY fadeout-Y">
+                    <div class="rolling-img">
+                        <div class="rolling-img-track">
+                            <img src="img/image 52review.png" alt="">
+                            <img src="img/image 53review.png" alt="">
+                            <img src="img/image 54review.png" alt="">
+                            <img src="img/image 55review.png" alt="">
+                            <img src="img/image 56review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
+                            <img src="img/image 52review.png" alt="">
+                            <img src="img/image 53review.png" alt="">
+                            <img src="img/image 54review.png" alt="">
+                            <img src="img/image 55review.png" alt="">
+                            <img src="img/image 56review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
+                            <img aria-hidden="true" src="img/image 52review.png" alt="">
+                            <img aria-hidden="true" src="img/image 53review.png" alt="">
+                            <img aria-hidden="true" src="img/image 54review.png" alt="">
+                            <img aria-hidden="true" src="img/image 55review.png" alt="">
+                            <img aria-hidden="true" src="img/image 56review.png" alt="">
+                            <img aria-hidden="true" src="img/image 57review.png" alt="">
+                            <img aria-hidden="true" src="img/image 52review.png" alt="">
+                            <img aria-hidden="true" src="img/image 53review.png" alt="">
+                            <img aria-hidden="true" src="img/image 54review.png" alt="">
+                            <img aria-hidden="true" src="img/image 55review.png" alt="">
+                            <img aria-hidden="true" src="img/image 56review.png" alt="">
+                            <img aria-hidden="true" src="img/image 57review.png" alt="">
+                        </div>
+                    </div>
+                    <div class="rolling-img2">
+                        <div class="rolling-img-track">
+                            <img src="img/image 61review.png" alt="">
+                            <img src="img/image 60review.png" alt="">
+                            <img src="img/image 59eview.png" alt="">
+                            <img src="img/image 58review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
+                            <img src="img/image 61review.png" alt="">
+                            <img src="img/image 60review.png" alt="">
+                            <img src="img/image 59eview.png" alt="">
+                            <img src="img/image 58review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
+                            <img aria-hidden="true" src="img/image 61review.png" alt="">
+                            <img aria-hidden="true" src="img/image 60review.png" alt="">
+                            <img aria-hidden="true" src="img/image 59review.png" alt="">
+                            <img aria-hidden="true" src="img/image 58review.png" alt="">
+                            <img aria-hidden="true" src="img/image 61review.png" alt="">
+                            <img aria-hidden="true" src="img/image 60review.png" alt="">
+                            <img aria-hidden="true" src="img/image 59review.png" alt="">
+                            <img aria-hidden="true" src="img/image 58review.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="wrapper">
+                <div class="marquee-text">
+                    <div class="marquee-text-track">
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                    </div>
+                </div>
+            </div>
+
+            <section id="why">
+                <p class="whyTitle" data-aos="fade-up" data-aos-duration="1000">점주님! 왜 더포인가요?</p>
+                <ul>
+                    <li data-aos="fade-up-right" data-aos-duration="800">
+                        <a href="#point-taste">
+                            <p>맛에 대한 자신감</p>
+                            <span>음식점의 근간은 당연 음식의 맛입니다.<br>
+                                더포는 베트남의 성공적인 한국화,<br>
+                                한국인들의 입맛에 맞는 맛입니다.
+                            </span>
+                        </a>
+                    </li>
+                    <li data-aos="fade-up-right" data-aos-duration="1300">
+                        <a href="#point-waiting">
+                            <p>브랜드 인지도</p>
+                            <span>대구경북에서 12년간 다져온 맛집 더포!<br>
+                                타지에서도 찾아오는 맛집으로<br>
+                                전국으로 뻗어나갈 일만 남았습니다.
+                            </span>
+                        </a>
+                    </li>
+                    <li data-aos="fade-up-right" data-aos-duration="600">
+                        <a href="#point-delivery">
+                            <p>자사 물류센터</p>
+                            <span>음식점의 근간은 당연 음식의 맛입니다.<br>
+                                더포는 베트남의 성공적인 한국화,<br>
+                                한국인들의 입맛에 맞는 맛입니다.
+                            </span>
+                        </a>
+                    </li>
+                    <li data-aos="fade-up-right" data-aos-duration="2000">
+                        <a href="#">
+                            <p>넓은 상권 보호</p>
+                            <span>음식점의 근간은 당연 음식의 맛입니다.<br>
+                                더포는 베트남의 성공적인 한국화,<br>
+                                한국인들의 입맛에 맞는 맛입니다.
+                            </span>
+                        </a>
+                    </li>
+                    <li data-aos="fade-up-right" data-aos-duration="1200">
+                        <a href="#">
+                            <p>안정적인 운영</p>
+                            <span>음식점의 근간은 당연 음식의 맛입니다.<br>
+                                더포는 베트남의 성공적인 한국화,<br>
+                                한국인들의 입맛에 맞는 맛입니다.
+                            </span>
+                        </a>
+                    </li>
+                    <li data-aos="fade-up-right" data-aos-duration="1600">
+                        <a href="#">
+                            <p>업계 최저 로열티 2%</p>
+                            <span>더포는 로열티 부담을 최소화하여<br>
+                                점주님들의 부담은 덜어내고<br>
+                                사업은 더 원활하게 운영하실 수 있도록 지원합니다.
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="point-taste">
+                <div class="dim"></div>
+                <video src="video/video_banhxeo.mp4" muted loop autoplay></video>
+
+                <div class="taste-inner">
+                    <div class="taste-img" data-aos="fade-up" data-aos-duration="1000">
+                        <p>MENU R&D</p>
+                        <img src="img/taste.png" alt="">
+                    </div>
+                    <div class="taste-text" data-aos="fade-up" data-aos-duration="1000">
+                        <h3>'맛'에 대한 고집,<br>
+                            '더포'는 자신있습니다.
+                        </h3>
+                        <p>유행에 휩쓸리는 단기 메뉴가 아닌<br>
+                            꾸준하게 손님들이 찾을 수 있는 진정성 있는 맛을 위해<br>
+                            하반기, 상반기 연 2회 메뉴 개발을 하고 있습니다.<br>
+                            <br>
+                            다양하게 출시되는 신메뉴에는 점주님들과<br>
+                            직원들의 교육과 숙지도 매번 동반됩니다.<br>
+                            더포는 맛과 고객의 니즈, 가격까지 고려하여<br>
+                            대중적이고 꾸준히 고객님들이 찾을만한 맛으로<br>
+                            자신있게 출시합니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="menu">
+                <h2 data-aos="fade-down" data-aos-duration="800">THE PHO MENU</h2>
+                <ul class="menuBtn" data-aos="fade-down" data-aos-duration="1000">
+                    <li class="active">에피타이저</li>
+                    <li>더포스페셜</li>
+                    <li>쌀국수</li>
+                    <li>비빔&볶음면</li>
+                    <li>볶음밥&덮밥</li>
+                    <li>스페셜음료</li>
+                </ul>
+                <div class="menus">
+                    <div class="swiper appetizer" data-aos="fade-down" data-aos-duration="1000">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="img/에피타이저-꼬이꾸온.png" alt="">
+                                <p>꼬이꾸온</p>
+                                <span>Goi Cuon</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/메뉴-이미지없음.png" alt="">
+                                <p>가느엉라짠</p>
+                                <span>Ga nuong la chanh</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/에피타이저-라우가.png" alt="">
+                                <p>라우가</p>
+                                <span>Rau ga</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/에피타이저-짜조.png" alt="">
+                                <p>짜조</p>
+                                <span>Cha gio</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/에피타이저-모닝글로리.png" alt="">
+                                <p>모닝글로리</p>
+                                <span>Morning glory</span>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper special" data-aos="fade-down" data-aos-duration="2100">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="img/스페셜-월남쌈.png" alt="">
+                                <p>월남쌈</p>
+                                <span>Vietnamese special wrap</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/스페셜-팃틴투.png" alt="">
+                                <p>팃틴투</p>
+                                <span>Thit tinh tu</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/스페셜-반쎄오.png" alt="">
+                                <p>반쎄오</p>
+                                <span>Banh xeo</span>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper noodle" data-aos="fade-down" data-aos-duration="2100">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="img/쌀국수-소갈비쌀국수.png" alt="">
+                                <p>소갈비쌀국수</p>
+                                <span>Pho with beef lib</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/쌀국수-차돌양지쌀국수.png" alt="">
+                                <p>차돌양지쌀국수</p>
+                                <span>Brisket and Shank Pho</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/쌀국수-양지쌀국수.png" alt="">
+                                <p>양지쌀국수</p>
+                                <span>Brisket Pho</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/쌀국수-퍼가이텁깜.png" alt="">
+                                <p>퍼가이텁깜</p>
+                                <span>Pho xao thap cam</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/쌀국수-퍼가이돔양.png" alt="">
+                                <p>퍼가이돔양</p>
+                                <span>Pho xao Tomyom</span>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper noodleMix" data-aos="fade-down" data-aos-duration="2100">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="img/쌀국수-분짜.png" alt="">
+                                <p>분짜</p>
+                                <span>Bun cha</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/비빔면-팟타이.png" alt="">
+                                <p>팟타이</p>
+                                <span>Pad thai</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/비빔면-팟타이.png" alt="">
+                                <p>코코넛 팟타이</p>
+                                <span>Butter Pad thai</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/비빔면-퍼보싸오.png" alt="">
+                                <p>퍼보싸오</p>
+                                <span>Pho bo xao</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/비빔면-퍼싸오텁깜.png" alt="">
+                                <p>퍼싸오텁깜</p>
+                                <span>Pho xao thap cam</span>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper rice" data-aos="fade-down" data-aos-duration="2100">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="img/볶음밥-껌텀.png" alt="">
+                                <p>껌텀</p>
+                                <span>Com thom</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/볶음밥-껌돔.png" alt="">
+                                <p>껌돔</p>
+                                <span>Com tom</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/볶음밥-껌텁깜.png" alt="">
+                                <p>껌텁깜</p>
+                                <span>Com thap cam</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/볶음밥-껌돔양.png" alt="">
+                                <p>껌돔양</p>
+                                <span>Tomyam fried rice</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/볶음밥-팟카파오무쌉.png" alt="">
+                                <p>팟카파오무쌉</p>
+                                <span>Pad kraprao moo sab</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/볶음밥-껌보텁깜.png" alt="">
+                                <p>껌보텁깜</p>
+                                <span>Com bo thap cam</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/볶음밥-껌보승.png" alt="">
+                                <p>껌보승(소갈비덮밥)</p>
+                                <span>Com bo suon</span>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper juice" data-aos="fade-down" data-aos-duration="2100">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="img/메뉴-이미지없음.png" alt="">
+                                <p>땡모반</p>
+                                <span>Watermelon juice</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/메뉴-이미지없음.png" alt="">
+                                <p>망고주스</p>
+                                <span>Mango juice</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="img/메뉴-이미지없음.png" alt="">
+                                <p>베트남 생코코넛</p>
+                                <span>Coconut juice</span>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="newPrd">
+                <div class="prd-txt" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="img/냉동숙면.png" alt="">
+                </div>
+                <img class="prd-noodle" src="img/noodle.png" alt="냉동숙면 출시예정">
+            </section>
+
+            <div class="wrapper">
+                <div class="marquee-text">
+                    <div class="marquee-text-track">
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <section id="point-waiting" data-aos="fade-down" data-aos-duration="1500">
+                <div class="dim"></div>
+                <video src="video/video_waiting.mp4" autoplay muted loop></video>
+
+                <div class="point-text">
+                    <h3>남녀노소 나이불문!<br>
+                        더포는 365일 웨이팅 중
+                    </h3>
+                    <p>신선하고 건강한 음식을 만드는 더포는<br>
+                        많은 분들이 매일 방문하고 있습니다!
+                    </p>
+                </div>
+                <div class="wrapper-img">
+                    <div class="marquee-img">
+                        <div class="marquee-img-track">
+                            <img src="img/웨이팅.png" alt="">
+                            <img src="img/웨이팅-1.png" alt="">
+                            <img src="img/웨이팅-2.png" alt="">
+                            <img src="img/웨이팅-3.png" alt="">
+                            <img src="img/웨이팅-4.png" alt="">
+                            <img src="img/웨이팅-5.png" alt="">
+                            <img src="img/웨이팅.png" alt="">
+                            <img src="img/웨이팅-1.png" alt="">
+                            <img src="img/웨이팅-2.png" alt="">
+                            <img src="img/웨이팅-3.png" alt="">
+                            <img src="img/웨이팅-4.png" alt="">
+                            <img src="img/웨이팅-5.png" alt="">
+                            <img src="img/웨이팅.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-1.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-2.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-3.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-4.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-5.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-1.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-2.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-3.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-4.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-5.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-1.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-2.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-3.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-4.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-5.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-1.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-2.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-3.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-4.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-5.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-1.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-2.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-3.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-4.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-5.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-1.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-2.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-3.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-4.png" alt="">
+                            <img aria-hidden="true" src="img/웨이팅-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="point-delivery">
+                <div class="delivery-img" data-aos="fade-right" data-aos-duration="1500">
+                    <img class="deli-mark" src="img/품질보장.png" alt="">
+                    <img class="deli-car" src="img/자사물류차량.png" alt="">
+                    <img class="deli-effect" src="img/자사물류차량-bg.png" alt="">
+                </div>
+                <div class="delivery-text" data-aos="fade-left" data-aos-duration="1500">
+                    <h3>자사물류센터로<br>
+                        신속·원활한 물류 납품
+                    </h3>
+                    <p>본사 직영점부터 사용하는 물류센터로<br>
+                        합리적인 가격과 고품질을 보장합니다!
+                    </p>
+                    <p>긴급 건은 요청만 해주세요!<br>
+                        신속하게 배송해드립니다.
+                    </p>
+                </div>
+            </section>
+
+            <section id="point-area">
+                <div class="area-text">
+                    <h3>모두의 성공을 위한 상생<br>
+                        ‘더포’에 맞는 상권은 따로 있습니다
+                    </h3>
+                    <p>음식점 반경 5km<br>
+                        거의 구마다 한두개 밖에 못넣음.
+                        상권의 주인인 점주님을 존중, 고심.
+
+                        더포는 'THE PHO'에 맞는 상권 선정으로<br>
+                        점주님들간의 상권을 보호하고 점주님<br>
+                        한분 한분 수익을 올릴 수 있는<br>
+                        넓은 영업범위를 보장합니다.
+                    </p>
+                </div>
+            </section>
+
+
+
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img src="path-to-your-logo.png" alt="Company Logo">
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h3>About Us</h3>
+                            <ul>
+                                <li><a href="#about">Company</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#careers">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Contact</h3>
+                            <ul>
+                                <li><a href="#contact">Email</a></li>
+                                <li><a href="#location">Location</a></li>
+                                <li><a href="#support">Support</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Follow Us</h3>
+                            <ul>
+                                <li><a href="#facebook">Facebook</a></li>
+                                <li><a href="#twitter">Twitter</a></li>
+                                <li><a href="#instagram">Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </footer>            
+
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+
+</html>
