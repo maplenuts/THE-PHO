@@ -198,7 +198,7 @@ $(function () {
         var scene = new ScrollMagic.Scene({
             triggerElement: this,
             triggerHook: 0.5,
-            duration: "100%"
+            duration: "90%"
         })
         .setPin(this)
         .on("enter", function(event) {
