@@ -19,6 +19,7 @@ html {
 }
 
 
+
 body {
    font-family: 'Pretendard', '맑은 고딕', sans-serif;
    font-weight: 400;
@@ -396,10 +397,24 @@ body {
 }
 
 .sinceInner .bang {
-   display: inline-block;
+   display: block;
    font-size: 9rem;
    font-weight: 900;
    color: var(--main-Orange);
+}
+
+.bang {
+   animation: zoomIn 1s;
+}
+
+@keyframes zoomIn {
+   0% {
+      opacity: 0;
+      transform: scale3d(.3, .3, .3);
+  }
+  50% {
+      opacity: 1;
+  }
 }
 
 
@@ -714,7 +729,7 @@ body {
 /* why the pho 영역 */
 #why {
    width: 100%;
-   height: 110vh;
+   height: 100vh;
    background: url(../img/bg_why.png) no-repeat center / cover;
    text-align: center;
    color: #fff;
@@ -1076,7 +1091,7 @@ body {
 }
 
 #point-waiting .point-text::before {
-   content: 'POINT 01';
+   content: 'POINT 02';
    color: #fff;
    padding: 8px 20px;
    border-radius: 100px;
@@ -1209,7 +1224,7 @@ body {
 
 
 #point-delivery .delivery-text::before {
-   content: 'POINT 02';
+   content: 'POINT 03';
    color: var(--main-Orange);
    padding: 8px 20px;
    border-radius: 100px;
@@ -1244,11 +1259,62 @@ body {
    width: 100%;
    height: 100vh;
    padding: 100px 0;
-   text-align: center;
+   background: #fff;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 8%;
+}
+
+.area-map {
+   position: relative;
+   width: 600px;
+   height: 600px;
+   border-radius: 40px;
+   border: 1px solid #ddd;
+   overflow: hidden;
+}
+
+.area-content {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   align-items: center;
+   justify-content: center;
+}
+
+.area-content img {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.area-logo {
+   z-index: 2;
+}
+
+.area-effect {
+   position: absolute;
+   z-index: 1;
+   transform-origin: center center; /* 요소의 중심을 기준으로 변환하도록 설정 */
+   animation: scaleEffect 2s infinite ease-out;
+}
+
+@keyframes scaleEffect {
+   0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.1); /* 위치와 크기를 동시에 조정 */
+   }
+   100% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.5); /* 위치와 크기를 동시에 조정 */
+   }
 }
 
 #point-area .area-text::before {
-   content: 'POINT 03';
+   content: 'POINT 04';
    color: #fff;
    padding: 8px 20px;
    border-radius: 100px;
@@ -1257,15 +1323,24 @@ body {
    background: var(--main-Orange);
 }
 
-#point-area .area-text {
+.area-text {
+   width: 25%;
+   margin-top: 80px;
    color: #111;
+}
+
+.area-text span {
+   display: block;
+   font-size: 2.4rem;
+   font-weight: 700;
+   margin-top: 30px;
 }
 
 .area-text h3 {
    font-size: 4rem;
    font-weight: 700;
    line-height: 1.3;
-   margin: 30px 0;
+   margin: 8px 0 30px;
 }
 
 .area-text h3+p {
