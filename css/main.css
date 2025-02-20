@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
+   --main-font: 'Pretendard';
    --sub-font: 'Poppins';
    --BG: #F6F5F1;
    --main-Orange: #FF6528;
@@ -12,9 +13,10 @@
 html {
    scroll-behavior: smooth;
 }
+
 @media (prefers-reduced-motion: reduce) {
    html {
-       scroll-behavior: auto;
+      scroll-behavior: auto;
    }
 }
 
@@ -50,7 +52,7 @@ body {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   font-size: 1.8rem;
+   font-size: 2rem;
    background-color: var(--BG);
    transition: all 0.35s;
 }
@@ -70,16 +72,7 @@ body {
 
 .gnb ul li {
    margin-left: 3vw;
-}
-
-.btn-contact {
-   display: block;
-   padding: 8px 30px;
-   color: #fff;
-   background-color: var(--main-Orange);
-   border-radius: 100px;
-   text-align: center;
-   font-weight: 500;
+   margin-top: 10px;
 }
 
 .gnb ul li a .char {
@@ -94,9 +87,9 @@ body {
    position: absolute;
    top: 0;
    left: 0;
-   opacity: 0.6;
+   opacity: 1;
    color: #111111;
-   font-weight: 500;
+   font-weight: 400;
    content: attr(data-char);
    transition: transform 0.35s;
    transition-delay: calc(30ms * var(--char-index));
@@ -109,10 +102,156 @@ body {
 .gnb ul li a:hover .char:before {
    transform: translateY(0%);
    opacity: 1;
+   color: var(--main-Orange);
+   font-weight: 500;
 }
 
 .gnb ul li a:hover .char:after {
    transform: translateY(-100%);
+}
+
+.btn-contact {
+   display: block;
+   padding: 8px 30px;
+   color: #fff;
+   background-color: var(--main-Orange);
+   border-radius: 100px;
+   font-size: 2.4rem;
+   text-align: center;
+   font-weight: 600;
+   transition: transform 0.3s ease-in-out;
+}
+
+.btn-contact:hover {
+   animation: scale 1s infinite ease-out;
+}
+
+@keyframes scale {
+   0% {
+      scale: 1;
+   }
+
+   100% {
+      scale: 1.2;
+   }
+}
+
+
+
+
+/* 창업문의 Form */
+.contactForm {
+   display: none;
+   /* Initially hidden */
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   left: 0;
+   top: 0;
+   background: rgba(1, 1, 1, 0.7);
+   z-index: 1000;
+}
+
+#Form {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   background: #fff;
+   padding: 30px 20px;
+   border-radius: 30px;
+}
+
+#Form h2 {
+   text-align: center;
+   font-size: 3rem;
+   font-weight: 700;
+   color: var(--main-Orange);
+   padding-bottom: 12px;
+}
+
+.closeBtn {
+   position: absolute;
+   top: 4%;
+   right: 3%;
+   background: transparent;
+   border: none;
+   color: #fff;
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+
+.formGroup label {
+   display: block;
+   font-size: 1.8rem;
+   padding: 8px 0;
+}
+
+.formGroup input {
+   background: #fff;
+   width: 100%;
+   font-size: 1.8rem;
+   padding: 16px;
+   border: 1px solid var(--main-Orange);
+   border-radius: 8px;
+}
+
+.formGroup textarea {
+   border: 1px solid var(--main-Orange);
+   border-radius: 8px;
+   width: 100%;
+   padding: 16px;
+   font-size: 1.8rem;
+   font-family: var(--main-font);
+}
+
+.privacy {
+   width: 600px;
+   height: 110px;
+   overflow-y: scroll;
+   background: #eee;
+   color: #000;
+   padding: 14px;
+}
+
+.privacy::before {
+   content: '개인정보처리방침';
+   font-weight: 500;
+   margin-bottom: 4px;
+   display: block;
+   color: #000;
+}
+
+#Form ul {
+   display: flex;
+   gap: 20px;
+   color: #000;
+   margin-bottom: 16px;
+}
+
+.agree {
+   display: flex;
+   align-items: center;
+}
+
+.agree input {
+   margin-right: 10px;
+}
+
+.contactBtn {
+   display: block;
+   width: 100%;
+   padding: 14px 0 16px 0;
+   border-radius: 16px;
+   color: #fff;
+   font-size: 2.4rem;
+   font-weight: 600;
+   background: var(--main-Orange);
+   cursor: pointer;
 }
 
 
@@ -146,7 +285,7 @@ body {
 .main_circle {
    position: absolute;
    right: 100px;
-   top: 0;
+   top: 30px;
    z-index: 10;
 }
 
@@ -163,7 +302,21 @@ body {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+   animation: move_down 1.5s infinite;
 }
+
+@keyframes move_down {
+   0% {
+      transform: translate(-50%, -65%);
+      opacity: 0.3;
+   }
+
+   100% {
+      transform: translate(-50%, -40%);
+      opacity: 1;
+   }
+}
+
 
 @keyframes circle_ani {
    0% {
@@ -185,6 +338,7 @@ body {
    overflow: hidden;
    border-radius: 50px;
    margin-bottom: 100px;
+   border: 5px solid var(--main-Orange);
    position: relative;
 }
 
@@ -343,7 +497,7 @@ body {
    border-radius: 50px;
    object-fit: cover;
    position: absolute;
-   right: 0;
+   right: -100px;
    top: 25%;
 }
 
@@ -398,9 +552,9 @@ body {
 
 .sinceInner .bang {
    display: block;
-   font-size: 9rem;
+   font-size: 10rem;
    font-weight: 900;
-   color: var(--main-Orange);
+   color: yellow;
 }
 
 .bang {
@@ -411,10 +565,11 @@ body {
    0% {
       opacity: 0;
       transform: scale3d(.3, .3, .3);
-  }
-  50% {
+   }
+
+   50% {
       opacity: 1;
-  }
+   }
 }
 
 
@@ -544,9 +699,17 @@ body {
 }
 
 @keyframes blink {
-   0% {transform: scale(0.7);}
-   50% {transform: scale(1.15);}
-   100% {transform: scale(0.7);}
+   0% {
+      transform: scale(0.7);
+   }
+
+   50% {
+      transform: scale(1.15);
+   }
+
+   100% {
+      transform: scale(0.7);
+   }
 }
 
 
@@ -595,7 +758,7 @@ body {
    position: absolute;
    left: 50%;
    top: 50%;
-   transform: translate(-50%,-50%);
+   transform: translate(-50%, -50%);
 }
 
 .L3-arrow {
@@ -622,14 +785,19 @@ body {
 .intro-txt li {
    margin-bottom: 20px;
    height: 30vh;
-   opacity: 0.3; /* 이미지 초기 숨김 */
-   transform: scale(0.8); /* 이미지 초기 크기 조절 */
-   transition: opacity 0.5s, transform 0.5s; /* 트랜지션에 크기 변경 추가 */
+   opacity: 0.3;
+   /* 이미지 초기 숨김 */
+   transform: scale(0.8);
+   /* 이미지 초기 크기 조절 */
+   transition: opacity 0.5s, transform 0.5s;
+   /* 트랜지션에 크기 변경 추가 */
 }
 
 .intro-txt li.active {
-   opacity: 1; /* 트리거될 때 표시 */
-   transform: scale(1.0); /* 트리거될 때 크기 확대 */
+   opacity: 1;
+   /* 트리거될 때 표시 */
+   transform: scale(1.0);
+   /* 트리거될 때 크기 확대 */
 }
 
 
@@ -648,7 +816,8 @@ body {
 
 .rec_text {
    text-align: center;
-   position: relative; /* 수정: absolute에서 relative로 변경 */
+   position: relative;
+   /* 수정: absolute에서 relative로 변경 */
 }
 
 .rec_text::before {
@@ -697,7 +866,7 @@ body {
    flex-direction: column;
    gap: 1rem;
    height: max-content;
-   animation: marquee-img2 30s linear infinite reverse;
+   animation: marquee-img2 80s linear infinite reverse;
 }
 
 .rolling-img2 .rolling-img-track {
@@ -705,7 +874,7 @@ body {
    flex-direction: column;
    gap: 1rem;
    height: max-content;
-   animation: marquee-img2 30s linear infinite;
+   animation: marquee-img2 80s linear infinite;
 }
 
 .rolling-img-track img {
@@ -755,10 +924,11 @@ body {
    0% {
       opacity: 0;
       transform: scale3d(.3, .3, .3);
-  }
-  50% {
+   }
+
+   50% {
       opacity: 1;
-  }
+   }
 }
 
 #why ul {
@@ -772,6 +942,7 @@ body {
    border-radius: 30px;
    background: var(--main-Orange);
    border: 1px solid var(--main-Orange);
+   transition: all 0.2s;
 }
 
 #why ul li:hover {
@@ -782,6 +953,7 @@ body {
 #why ul li a {
    display: block;
    color: #fff;
+   transition: all 0.2s;
 }
 
 #why ul li:hover a {
@@ -1103,13 +1275,15 @@ body {
 .point-text {
    text-align: center;
    color: #fff;
-   position: absolute; /* 유지 */
+   position: absolute;
+   /* 유지 */
    top: 15%;
    left: 40%;
    transform: translateX(-50%);
    margin: 0;
    padding: 0;
-   z-index: 10; /* 추가된 부분 */
+   z-index: 10;
+   /* 추가된 부분 */
 }
 
 .point-text h3 {
@@ -1119,7 +1293,7 @@ body {
    margin: 30px 0;
 }
 
-.point-text h3 + p {
+.point-text h3+p {
    font-size: 2rem;
    margin-bottom: 80px;
 }
@@ -1142,7 +1316,7 @@ body {
    gap: 4rem;
    width: max-content;
    padding-left: 4.8rem;
-   animation: marquee-img 30s linear infinite;
+   animation: marquee-img 60s linear infinite;
 }
 
 .marquee-img-track img {
@@ -1175,9 +1349,10 @@ body {
 
 .delivery-img .deli-mark {
    position: absolute;
+   top: 0;
    left: 0;
    z-index: 5;
-   width: 200px;
+   width: 250px;
    animation: burst 0.7s cubic-bezier(0, .46, .26, .99) alternate-reverse infinite;
 }
 
@@ -1189,7 +1364,7 @@ body {
 
 .delivery-img .deli-car {
    position: absolute;
-   left: 100px;
+   left: 150px;
    top: 20px;
    width: 620px;
    z-index: 3;
@@ -1206,19 +1381,23 @@ body {
 /* 차가 부릉부릉 움직이는 애니메이션 */
 @keyframes moveCar {
    0% {
-       transform: translateX(0);
+      transform: translateX(0);
    }
+
    25% {
-       transform: translateX(30px);
+      transform: translateX(30px);
    }
+
    50% {
-       transform: translateX(0);
+      transform: translateX(0);
    }
+
    75% {
-       transform: translateX(-30px);
+      transform: translateX(-30px);
    }
+
    100% {
-       transform: translateX(0);
+      transform: translateX(0);
    }
 }
 
@@ -1237,7 +1416,7 @@ body {
    text-align: left;
    color: #fff;
    width: calc((100% / 3));
-   padding: 80px 0;
+   padding: 70px 0;
 }
 
 .delivery-text h3 {
@@ -1248,12 +1427,26 @@ body {
 }
 
 .delivery-text h3+p {
-   font-size: 2rem;
-   margin-bottom: 80px;
+   font-size: 2.4rem;
+   margin-bottom: 50px;
 }
 
+.delivery-text img {
+   transition: all 0.3s ease-in-out;
+   animation: pulse 3s infinite; /* 애니메이션 적용 */
+}
 
-
+@keyframes pulse {
+   0% {
+      transform: scale(1);
+   }
+   50% {
+      transform: scale(1.05); /* 크기를 1.05배로 확대 */
+   }
+   100% {
+      transform: scale(1);
+   }
+}
 
 #point-area {
    width: 100%;
@@ -1272,7 +1465,7 @@ body {
    width: 600px;
    height: 600px;
    border-radius: 40px;
-   border: 1px solid #ddd;
+   border: 3px solid var(--main-Orange);
    overflow: hidden;
 }
 
@@ -1292,24 +1485,29 @@ body {
 }
 
 .area-logo {
+   width: 100px;
    z-index: 2;
 }
 
 .area-effect {
    position: absolute;
    z-index: 1;
-   transform-origin: center center; /* 요소의 중심을 기준으로 변환하도록 설정 */
+   transform-origin: center center;
+   /* 요소의 중심을 기준으로 변환하도록 설정 */
    animation: scaleEffect 2s infinite ease-out;
 }
 
 @keyframes scaleEffect {
    0% {
       opacity: 0;
-      transform: translate(-50%, -50%) scale(0.1); /* 위치와 크기를 동시에 조정 */
+      transform: translate(-50%, -50%) scale(0.3);
+      /* 위치와 크기를 동시에 조정 */
    }
+
    100% {
       opacity: 1;
-      transform: translate(-50%, -50%) scale(1.5); /* 위치와 크기를 동시에 조정 */
+      transform: translate(-50%, -50%) scale(1.5);
+      /* 위치와 크기를 동시에 조정 */
    }
 }
 
@@ -1349,10 +1547,237 @@ body {
 }
 
 
+/* point-news */
+#point-news {
+   width: 100%;
+   height: 100vh;
+   padding: 100px 10%;
+   align-items: center;
+   background: #304674;
+   text-align: center;
+}
+
+#point-news .news-text::before {
+   content: 'POINT 05';
+   color: #fff;
+   padding: 8px 20px;
+   border-radius: 100px;
+   font-size: 2rem;
+   font-weight: 600;
+   background: var(--main-Orange);
+}
+
+.news-text h3 {
+   font-size: 4rem;
+   font-weight: 700;
+   line-height: 1.5;
+   color: #fff;
+   padding: 12px 0;
+}
+
+.news-text h3+p {
+   color: #fff;
+   font-size: 1.8rem;
+}
+
+
+#point-news .newsList {
+   width: 100%;
+   height: 600px;
+   margin-top: 30px;
+}
+
+.newsList .swiper-wrapper {
+   display: flex;
+   width: 100%;
+   height: 530px;
+}
+
+.newsList .swiper-slide {
+   width: 100%;
+   height: 250px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.newsList .swiper-slide img {
+   width: 100%;
+   height: 250px;
+   object-fit: cover;
+   border-radius: 30px;
+}
+
+
+
+/* point-royalty */
+#point-royalty {
+   width: 100%;
+   padding: 120px 10%;
+   align-items: center;
+   background: url(../img/dim-pattern.png) no-repeat center / cover;;
+   text-align: center;
+}
+
+#point-royalty .royalty-text::before {
+   content: 'POINT 06';
+   color: #fff;
+   padding: 8px 20px;
+   border-radius: 100px;
+   font-size: 2rem;
+   font-weight: 600;
+   background: var(--main-Orange);
+}
+
+.royalty-text h3 {
+   font-size: 4rem;
+   font-weight: 700;
+   line-height: 1.5;
+   color: #fff;
+   padding: 12px 0;
+}
+
+.royalty-text h3+p {
+   color: #fff;
+   font-size: 1.8rem;
+}
+
+.royalty-list {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 30px;
+   margin-top: 30px;
+}
+
+.royalty-list li {
+   padding: 40px 30px;
+   border-radius: 30px;
+   background: rgba(255, 255, 255, 0.95);
+   border: 3px solid var(--main-Orange);
+   transition: all 0.2s;
+}
+
+.royalty-list li:hover {
+   transform: scale(1.05); /* 크기를 1.05배로 확대 */
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+   transition: all 0.3s ease; /* 전환 속도 및 효과 */
+}
+
+.royalty-list li p {
+   font-weight: 700;
+   font-size: 2.6rem;
+   line-height: 1.4;
+   margin-bottom: 30px;
+   color: var(--main-Orange);
+}
+
+
+/* 가맹절차 */
+#process {
+   width: 100%;
+   padding: 80px 15%;
+   text-align: center;
+   justify-content: center;
+   /* background: url(../img/bg-logoPattern.png) no-repeat top / cover; */
+}
+
+#process h3::before {
+   content: 'Process';
+   display: block;
+   text-transform: uppercase;
+   font-size: 1.8rem;
+   font-weight: 600;
+   color: var(--main-Orange);
+}
+
+#process h3 {
+   font-size: 4rem;
+   font-weight: 800;
+   text-align: center;
+}
+
+#process ul {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+   padding: 20px 0;
+}
+
+#process ul li img {
+   width: 340px;
+   border-radius: 20px;
+   box-shadow: 0 10px 15px rgba(1, 1, 1, 0.2);
+}
+
+#process div {
+   padding: 12px 0;
+   margin: 0 auto;
+   width: calc((340px * 3) + 40px);
+   border-radius: 12px;
+   background: #fff;
+   color: #593729;
+   font-weight: 500;
+   box-shadow: 0 10px 15px rgba(1, 1, 1, 0.2);
+}
+
+
+
+/* 창업비용 */
+#openPrice {
+   width: 100%;
+   padding: 80px 15%;
+   background: #fff url(../img/bg-logoPattern.png) no-repeat top / cover;
+}
+
+#openPrice h3::before {
+   content: 'franchise';
+   display: block;
+   text-transform: uppercase;
+   font-size: 1.8rem;
+   font-weight: 600;
+   color: var(--main-Orange);
+}
+
+#openPrice h3 {
+   font-size: 4rem;
+   font-weight: 800;
+   text-align: center;
+}
+
+#openPrice img {
+   width: 100%;
+   margin: 20px 0;
+   border-radius: 30px;
+   box-shadow: 0px 10px 30px rgba(1, 1, 1, 0.1);
+}
+
+
+
+
 
 /* footer 영역 */
-footer {
-   background-color: #333;
+#footer {
+   background-color: #242424;
    color: #fff;
-   padding: 20px 0;
+   padding: 80px 20%;
+   display: flex;
+   justify-content: space-between;
+}
+
+#footer div {
+   font-size: 1.6rem;
+   opacity: 0.8;
+}
+
+#footer .copy {
+   font-size: 1.3rem;
+   opacity: 0.5;
+   margin-top: 20px;
+}
+
+#footer ul {
+   display: flex;
+   gap: 24px;
+   opacity: 0.6;
 }
