@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
@@ -193,12 +194,14 @@ body {
 
 .formGroup input {
    background: #fff;
+
    width: 100%;
    font-size: 1.8rem;
    padding: 16px;
    border: 1px solid var(--main-Orange);
    border-radius: 8px;
 }
+
 
 .formGroup textarea {
    border: 1px solid var(--main-Orange);
@@ -1433,16 +1436,20 @@ body {
 
 .delivery-text img {
    transition: all 0.3s ease-in-out;
-   animation: pulse 3s infinite; /* 애니메이션 적용 */
+   animation: pulse 3s infinite;
+   /* 애니메이션 적용 */
 }
 
 @keyframes pulse {
    0% {
       transform: scale(1);
    }
+
    50% {
-      transform: scale(1.05); /* 크기를 1.05배로 확대 */
+      transform: scale(1.05);
+      /* 크기를 1.05배로 확대 */
    }
+
    100% {
       transform: scale(1);
    }
@@ -1615,7 +1622,8 @@ body {
    width: 100%;
    padding: 120px 10%;
    align-items: center;
-   background: url(../img/dim-pattern.png) no-repeat center / cover;;
+   background: url(../img/dim-pattern.png) no-repeat center / cover;
+   ;
    text-align: center;
 }
 
@@ -1658,9 +1666,12 @@ body {
 }
 
 .royalty-list li:hover {
-   transform: scale(1.05); /* 크기를 1.05배로 확대 */
-   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
-   transition: all 0.3s ease; /* 전환 속도 및 효과 */
+   transform: scale(1.05);
+   /* 크기를 1.05배로 확대 */
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   /* 그림자 추가 */
+   transition: all 0.3s ease;
+   /* 전환 속도 및 효과 */
 }
 
 .royalty-list li p {
@@ -1751,9 +1762,6 @@ body {
    border-radius: 30px;
    box-shadow: 0px 10px 30px rgba(1, 1, 1, 0.1);
 }
-
-
-
 
 
 /* footer 영역 */
