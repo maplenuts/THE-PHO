@@ -50,45 +50,45 @@ $(document).ready(function () {
         $(".contactForm").css("display", "none");
     });
 
-    // Form submission
-    document.getElementById('Form').addEventListener('submit', function (event) {
-        event.preventDefault(); // 폼 제출을 막음
+    // // Form submission
+    // document.getElementById('Form').addEventListener('submit', function (event) {
+    //     event.preventDefault(); // 폼 제출을 막음
 
-        alert('제출되었습니다.');
+    //     alert('제출되었습니다.');
 
-        const name = document.getElementById('name').value;
-        const phone = document.getElementById('phone').value;
-        const place = document.getElementById('place').value;
-        const message = document.getElementById('message').value;
+    //     const name = document.getElementById('name').value;
+    //     const phone = document.getElementById('phone').value;
+    //     const place = document.getElementById('place').value;
+    //     const message = document.getElementById('message').value;
 
-        // 폼 데이터 검증
-        if (name && phone && place && message) {
-            const form = document.getElementById('Form');
-            const formData = new FormData(form);
+    //     // 폼 데이터 검증
+    //     if (name && phone && place && message) {
+    //         const form = document.getElementById('Form');
+    //         const formData = new FormData(form);
 
-            fetch(form.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                }
-            })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.result === 'success') {
-                        alert('문의가 성공적으로 전송되었습니다.');
-                    } else {
-                        alert('문의 전송에 실패했습니다. 다시 시도해주세요.');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    alert('서버 오류가 발생했습니다. 다시 시도해주세요.');
-                });
+    //         fetch(form.action, {
+    //             method: 'POST',
+    //             body: formData,
+    //             headers: {
+    //                 'Content-Type': 'application/x-www-form-urlencoded'
+    //             }
+    //         })
+    //             .then(response => response.json())
+    //             .then(data => {
+    //                 if (data.result === 'success') {
+    //                     alert('문의가 성공적으로 전송되었습니다.');
+    //                 } else {
+    //                     alert('문의 전송에 실패했습니다. 다시 시도해주세요.');
+    //                 }
+    //             })
+    //             .catch(error => {
+    //                 console.error('Error:', error);
+    //                 alert('서버 오류가 발생했습니다. 다시 시도해주세요.');
+    //             });
 
-            alert(`문의가 성공적으로 제출되었습니다!\n이름: ${name}\n전화번호: ${phone}\n희망지역: ${place}\n문의 내용: ${message}`);
-        }
-    });
+    //         alert(`문의가 성공적으로 제출되었습니다!\n이름: ${name}\n전화번호: ${phone}\n희망지역: ${place}\n문의 내용: ${message}`);
+    //     }
+    // });
 
     // Brand Button
     $(function () {
