@@ -26,7 +26,8 @@
     <!-- favicon -->
 
     <!-- font -->
-    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
 
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css">
@@ -71,12 +72,19 @@
             <a href="#" class="btn-contact">창업문의</a>
         </header>
 
+        <script>
+            function closeForm() {
+                document.querySelector('.contactForm').style.display = 'none';
+            }
+        </script>
+        
         <div class="contactForm">
             <img class="closeBtn" src="img/closeBtn.png" alt="닫기" onclick="closeForm()">
-
-            <form id="Form" method="post" data-email="colorbrain2024@naver.com"
-                action="https://script.google.com/macros/s/AKfycbwwQIhjoaNE3kXGubN7HM5Z7VtH7uQpe9BOLXy-QQLiZAmP-zGS9gDjuyIGNA087VH8/exec"
-                target="frAttachFiles" onsubmit="return submitForm()">
+            <iframe name="frAttachFiles" style="display:none;"></iframe>
+            <form id="Form" method="post" data-email="luastorynew@kakao.com"
+                action="https://script.google.com/macros/s/AKfycbxkt6vDh7KZHpkl4AihyliItYYig-f9qXYTkV8A8tdbmNOGs2JvftL-u4UAR_ei2Ggs/exec"
+                target="frAttachFiles" 
+                onsubmit="alert( '제출이 완료되었습니다!' ); closeForm(); return false;">
                 <h2>더포 창업문의</h2>
                 <div class="formGroup">
                     <input type="text" id="name" name="name" title="성함" placeholder="성함을 입력해주세요" required><br>
@@ -151,18 +159,17 @@
                         4.경찰청 사이버테러대응센터 (www.ctrc.go.kr/02-392-0330)
                     </p>
                 </div>
-
+        
                 <ul>
-                    <li class="agree"><input type="checkbox" id="is_agree" name="is_agree" checked="checked"><label
-                            for="is_agree">개인정보처리방침에 동의합니다.</label></li>
-                    <li class="agree"><input type="checkbox" id="is_market" name="is_market" checked="checked"><label
-                            for="is_market">마케팅활용에 동의합니다.</label></li>
+                    <li class="agree"><input type="checkbox" id="is_agree" name="is_agree" checked="checked"><label for="is_agree">개인정보처리방침에 동의합니다.</label></li>
+                    <li class="agree"><input type="checkbox" id="is_market" name="is_market" checked="checked"><label for="is_market">마케팅활용에 동의합니다.</label></li>
                 </ul>
-
+        
                 <button class="contactBtn" type="submit">문의하기</button>
             </form>
             <iframe name="frAttachFiles" style="display:none;"></iframe>
         </div>
+        
 
 
         <main id="main">
