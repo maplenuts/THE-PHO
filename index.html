@@ -64,12 +64,106 @@
                     <li><a href="#since" data-splitting>더포소개</a></li>
                     <li><a href="#rec_intro" data-splitting>고객의 선택</a></li>
                     <li><a href="#why" data-splitting>POINT 6</a></li>
-                    <li><a href="#" data-splitting>사회공헌활동</a></li>
-                    <li><a href="#" data-splitting>창업안내</a></li>
+                    <li><a href="#point-news" data-splitting>사회공헌활동</a></li>
+                    <li><a href="#process" data-splitting>창업안내</a></li>
                 </ul>
             </nav>
             <a href="#" class="btn-contact">창업문의</a>
         </header>
+
+        <div class="contactForm">
+            <img class="closeBtn" src="img/closeBtn.png" alt="닫기" onclick="closeForm()">
+
+            <form id="Form" method="post" data-email="colorbrain2024@naver.com"
+                action="https://script.google.com/macros/s/AKfycbwwQIhjoaNE3kXGubN7HM5Z7VtH7uQpe9BOLXy-QQLiZAmP-zGS9gDjuyIGNA087VH8/exec"
+                target="frAttachFiles" onsubmit="return submitForm()">
+                <h2>더포 창업문의</h2>
+                <div class="formGroup">
+                    <input type="text" id="name" name="name" title="성함" placeholder="성함을 입력해주세요" required><br>
+                </div>
+                <div class="formGroup">
+                    <input type="tel" id="phone" name="phone" title="연락처(숫자만)" placeholder="연락처를 입력해주세요" required><br>
+                </div>
+                <div class="formGroup">
+                    <input type="text" id="place" name="place" title="희망지역" placeholder="희망지역을 입력해주세요" required><br>
+                </div>
+                <div class="formGroup">
+                    <textarea id="message" name="message" title="문의내용" placeholder="문의내용을 입력해주세요"></textarea><br>
+                </div>
+
+                <div class="privacy">
+                    <p>'(주)루호'는 (이하 '회사'는) 고객님의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호"에 관한 법률을 준수하고 있습니다. 회사는 개인정보처리방침을 통하여
+                        고객님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.
+                        <br>
+                        <br>
+                        수집하는 개인정보 항목<br>
+                        회사는 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.
+                        ○ 수집항목 : 이름, 연락처, 쿠키, 접속 IP 정보<br>
+                        ○ 개인정보 수집방법 : 홈페이지(상담신청)<br><br>
+                        개인정보의 수집 및 이용목적<br>
+                        회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br><br>
+                        ○ 상담안내<br>
+                        개인정보의 보유 및 이용기간<br>
+                        원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.
+                        개인정보의 파기절차 및 방법<br><br>
+                        ○ 파기절차 - 광고주의 동의 하에 상기 기술된 정보활용의 목적이 달성된 이후 별도의 DB로
+                        옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기되어 집니다.
+                        - 별도 DB로 옮겨진 개인정보는 내부활용(상기 표기) 목적 및 법률에 의한 경우가 아니고서는
+                        보유 되어지는 이외의 다른 목적으로 이용되지 않습니다.<br><br>
+                        ○ 파기방법<br>
+                        - 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.
+                        개인정보 제공<br>
+                        회사는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.
+                        - 이용자들이 사전에 동의한 경우<br>
+                        - 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우
+                        <br>
+                        수집한 개인정보의 위탁<br>
+                        회사는 고객님의 동의 없이 고객님의 정보를 외부 업체에 위탁하지 않습니다.<br>
+                        향후 그러한 필요가 생길 경우, 위탁 대상자와 위탁 업무 내용에 대해 고객님에게 통지하고 필요한 경우 사전 동의를 받도록 하겠습니다.
+                        이용자 및 법정대리인의 권리와 그 행사방법 이용자의 요청에 의해 해지 또는 삭제된 개인정보는 “회사가 수집하는 개인정보의 보유 및 이용기간”에 명시된 바에 따라 처리하고
+                        그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.<br>
+                        개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항<br>
+                        회사는 귀하의 정보를 수시로 저장하고 찾아내는 '쿠키(cookie)' 등을 운용합니다.
+                        쿠키란 웹사이트를 운영하는데 이용되는 서버가 귀하의 브라우저에 보내는 아주 작은 텍스트 파일로서 귀하의 컴퓨터 하드디스크에 저장됩니다. 회사은(는) 다음과 같은 목적을 위해
+                        쿠키를 사용합니다.<br><br>
+                        ○ 쿠키 등 사용 목적<br>
+                        - 회원과 비회원의 접속 빈도나 방문 시간 등을 분석, 이용자의 취향과 관심분야를 파악 및 자취 추적,각종 이벤트 참여 정도 및 방문 회수 파악 등을 통한 타겟 마케팅 및
+                        개인 맞춤 서비스 제공<br><br>
+                        ○ 쿠키 설정 거부 방법<br>
+                        예: 쿠키 설정을 거부하는 방법으로는 회원님이 사용하시는 웹 브라우저의 옵션을 선택함으로써 모든 쿠키를 허용하거나 쿠키를 저장할 때마다 확인을 거치거나, 모든 쿠키의 저장을
+                        거부할 수 있습니다.<br><br>
+                        설정방법 예(인터넷 익스플로어의 경우)<br>
+                        - 웹 브라우저 상단의 도구 > 인터넷 옵션 > 개인정보<br>
+                        단, 귀하께서 쿠키 설치를 거부하였을 경우 서비스 제공에 어려움이 있을 수 있습니다.<br>
+                        <br>
+                        개인정보에 관한 민원서비스<br>
+                        회사는 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.
+                        <br>
+                        개인정보 보호책임자 :<br>
+                        연락처 : 1533-0211<br>
+                        회사의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보관리실무 및 책임자에게 신고하실 수 있습니다.
+                        <br>회사는 이용자들의 신고사항에 대해 신속하게 충분 한 답변을 드릴 것입니다.<br>
+                        <br>
+                        기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.
+                        1.개인분쟁조정위원회 (www.1336.or.kr/1336)<br>
+                        2.정보보호마크인증위원회 (www.eprivacy.or.kr/02-580-0533~4)<br>
+                        3.대검찰청 인터넷범죄수사센터 (http://icic.sppo.go.kr/02-3480-3600)<br>
+                        4.경찰청 사이버테러대응센터 (www.ctrc.go.kr/02-392-0330)
+                    </p>
+                </div>
+
+                <ul>
+                    <li class="agree"><input type="checkbox" id="is_agree" name="is_agree" checked="checked"><label
+                            for="is_agree">개인정보처리방침에 동의합니다.</label></li>
+                    <li class="agree"><input type="checkbox" id="is_market" name="is_market" checked="checked"><label
+                            for="is_market">마케팅활용에 동의합니다.</label></li>
+                </ul>
+
+                <button class="contactBtn" type="submit">문의하기</button>
+            </form>
+            <iframe name="frAttachFiles" style="display:none;"></iframe>
+        </div>
+
 
         <main id="main">
             <section id="main_banner">
@@ -137,14 +231,16 @@
                             <p>안녕하세요, 대표 김현규입니다.<br>
                                 저는 배를 타고 세계 곳곳을 누비며 현지에서 음식을 배우면서<br>
                                 '장사'로 성공하고 싶다는 일념 하나로 [더포]를 창업하였습니다.<br>
-                                그 가운데 많은 고객님들의 사랑 덕분에 이렇게 프랜차이즈 사업을 시작하게 되었습니다.<br>
+                                그 가운데 많은 고객님들의 사랑 덕분에<br>
+                                이렇게 프랜차이즈 사업을 시작하게 되었습니다.<br>
                                 <br>
-                                루아는 제 아이의 이름입니다.<br>
+                                루호는 제 아이의 이름입니다.<br>
                                 그만큼 정직하게, 책임감을 가지고 임하고 있습니다.<br>
                                 <br>
                                 저는 사업가가 아니라, 손님들과 마주하며 대접하는 장사꾼입니다.<br>
                                 저희 음식을 좋아해주시는 모든 분들과 소통하고,<br>
-                                저희 공간에서 좋은 추억을 만들 수 있는 그 과정이 너무나 매력적이기 때문입니다.<br>
+                                저희 공간에서 좋은 추억을 만들 수 있는 그 과정이<br>
+                                너무나 매력적이기 때문입니다.<br>
                                 <br>
                                 점주님들과 상생하고 고객님들과 함께<br>
                                 오래가는 브랜드가 되었으면 좋겠습니다.
@@ -180,7 +276,6 @@
             </section>
 
             <section id="story">
-
                 <div class="title">
                     <p>김현규 대표가 직접 전하는</p>
                     <h3>더포 성공스토리</h3>
@@ -244,7 +339,7 @@
                     </div>
                 </div>
                 <div class="sinceBar">
-                    <p data-aos="fade-up" data-aos-duration="1000">이익을 위해 시작한 브랜드가 아닙니다</p>
+                    <p data-aos="zoom-in" data-aos-duration="1100">이익을 위해 시작한 브랜드가 아닙니다</p>
                 </div>
             </section>
 
@@ -351,6 +446,18 @@
                             <img src="img/image 55review.png" alt="">
                             <img src="img/image 56review.png" alt="">
                             <img src="img/image 57review.png" alt="">
+                            <img src="img/image 52review.png" alt="">
+                            <img src="img/image 53review.png" alt="">
+                            <img src="img/image 54review.png" alt="">
+                            <img src="img/image 55review.png" alt="">
+                            <img src="img/image 56review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
+                            <img src="img/image 52review.png" alt="">
+                            <img src="img/image 53review.png" alt="">
+                            <img src="img/image 54review.png" alt="">
+                            <img src="img/image 55review.png" alt="">
+                            <img src="img/image 56review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
                             <img aria-hidden="true" src="img/image 52review.png" alt="">
                             <img aria-hidden="true" src="img/image 53review.png" alt="">
                             <img aria-hidden="true" src="img/image 54review.png" alt="">
@@ -367,6 +474,16 @@
                     </div>
                     <div class="rolling-img">
                         <div class="rolling-img-track">
+                            <img src="img/image 61review.png" alt="">
+                            <img src="img/image 60review.png" alt="">
+                            <img src="img/image 59eview.png" alt="">
+                            <img src="img/image 58review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
+                            <img src="img/image 61review.png" alt="">
+                            <img src="img/image 60review.png" alt="">
+                            <img src="img/image 59eview.png" alt="">
+                            <img src="img/image 58review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
                             <img src="img/image 61review.png" alt="">
                             <img src="img/image 60review.png" alt="">
                             <img src="img/image 59eview.png" alt="">
@@ -414,6 +531,18 @@
                             <img src="img/image 55review.png" alt="">
                             <img src="img/image 56review.png" alt="">
                             <img src="img/image 57review.png" alt="">
+                            <img src="img/image 52review.png" alt="">
+                            <img src="img/image 53review.png" alt="">
+                            <img src="img/image 54review.png" alt="">
+                            <img src="img/image 55review.png" alt="">
+                            <img src="img/image 56review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
+                            <img src="img/image 52review.png" alt="">
+                            <img src="img/image 53review.png" alt="">
+                            <img src="img/image 54review.png" alt="">
+                            <img src="img/image 55review.png" alt="">
+                            <img src="img/image 56review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
                             <img aria-hidden="true" src="img/image 52review.png" alt="">
                             <img aria-hidden="true" src="img/image 53review.png" alt="">
                             <img aria-hidden="true" src="img/image 54review.png" alt="">
@@ -430,6 +559,16 @@
                     </div>
                     <div class="rolling-img2">
                         <div class="rolling-img-track">
+                            <img src="img/image 61review.png" alt="">
+                            <img src="img/image 60review.png" alt="">
+                            <img src="img/image 59eview.png" alt="">
+                            <img src="img/image 58review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
+                            <img src="img/image 61review.png" alt="">
+                            <img src="img/image 60review.png" alt="">
+                            <img src="img/image 59eview.png" alt="">
+                            <img src="img/image 58review.png" alt="">
+                            <img src="img/image 57review.png" alt="">
                             <img src="img/image 61review.png" alt="">
                             <img src="img/image 60review.png" alt="">
                             <img src="img/image 59eview.png" alt="">
@@ -491,9 +630,9 @@
             </div>
 
             <section id="why">
-                <p class="whyTitle" data-aos="fade-up" data-aos-duration="1000">점주님! 왜 더포인가요?</p>
+                <p class="whyTitle" data-aos="fade-up" data-aos-duration="1500">점주님! 왜 더포인가요?</p>
                 <ul>
-                    <li data-aos="fade-up-right" data-aos-duration="800">
+                    <li data-aos="fade-up-right" data-aos-duration="1500">
                         <a href="#point-taste">
                             <p>맛에 대한 자신감</p>
                             <span>음식점의 근간은 당연 음식의 맛입니다.<br>
@@ -526,12 +665,12 @@
                             <span>무분별한 확장이 아닌<br>
                                 점주님들간의 상권과 수익 보호를 위해<br>
                                 넓은 영업범위를 보장합니다.
-                                
+
                             </span>
                         </a>
                     </li>
                     <li data-aos="fade-up-right" data-aos-duration="1200">
-                        <a href="#">
+                        <a href="#point-news">
                             <p>선한 영향력 공유</p>
                             <span>고객님께 받은 사랑을 함께 나누고자<br>
                                 기부 및 강의, 자영업 고충 상담 등<br>
@@ -540,7 +679,7 @@
                         </a>
                     </li>
                     <li data-aos="fade-up-right" data-aos-duration="1600">
-                        <a href="#">
+                        <a href="#point-royalty">
                             <p>업계 최저 로열티 2%</p>
                             <span>더포는 로열티 부담을 최소화하여<br>
                                 점주님들의 부담은 덜어내고<br>
@@ -883,9 +1022,7 @@
                     <p>본사 직영점부터 사용하는 물류센터로<br>
                         합리적인 가격과 고품질을 보장합니다!
                     </p>
-                    <p>긴급 건은 요청만 해주세요!<br>
-                        신속하게 배송해드립니다.
-                    </p>
+                    <img src="img/delivery.png" alt="긴급건은 요청만 해주세요 신속하게 공급해드립니다">
                 </div>
             </section>
 
@@ -913,11 +1050,138 @@
                     </p>
                 </div>
             </section>
-            
-            
+
+            <section id="point-news">
+                <div class="news-text">
+                    <h3>고객님께 받은 사랑, 함께 나누겠습니다
+                    </h3>
+                    <p>지역 사회 기부활동과 소상공인들을 위한 강의, 청소년을 위한 진로토크 등<br>
+                        고객님께 받은 사랑을 나누고 함께 상생하기 위해 노력하고 있습니다.
+                    </p>
+                </div>
+                <div class="swiper newsList">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/활동.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/활동-1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/활동-2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/활동-3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/활동-4.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/활동-5.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/활동-6.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/활동-7.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/활동-8.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/활동-9.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/활동-10.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/활동-11.png" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <section id="point-royalty">
+                <div class="royalty-text">
+                    <h3>동종 업계 최저! 로열티 2%
+                    </h3>
+                    <ul class="royalty-list">
+                        <li>
+                            <p>고정 비용은 낮추고, 수익은 UP!</p>
+                            <span>더포는 업계 최저 수준의 로열티 2% 고정으로<br>
+                                점주님들의 운영 비용을 줄이고, 안정된 경영 환경에서<br>
+                                보다 많은 수익을 창출할 수 있도록 합니다.
+                            </span>
+                        </li>
+                        <li>
+                            <p>전폭적인 지원과 협력</p>
+                            <span>더포는 가맹점의 성공을 위해 마케팅, 교육,<br>
+                                운영 노하우 등 다양한 방면에서 점주님들을 돕고,<br>
+                                함께 성장할 수 있는 환경을 제공합니다.
+                            </span>
+                        </li>
+                        <li>
+                            <p>슈퍼바이저 배치</p>
+                            <span>더포는 지점별 담당 슈퍼바이저를 배치하여<br>
+                                오픈 전부터 오픈 후에도 점주님의 운영과<br>
+                                매장 케어를 도와드립니다.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="wrapper">
+                <div class="marquee-text">
+                    <div class="marquee-text-track">
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p>THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                        <p aria-hidden="true">THE PHO</p>
+                    </div>
+                </div>
+            </div>
+
+            <section id="process">
+                <h3 data-aos="zoom-in" data-aos-duration="1500">가맹 절차</h3>
+                <ul>
+                    <li><img data-aos="zoom-in-up" data-aos-duration="1000" src="img/가맹절차1.png" alt=""></li>
+                    <li><img data-aos="zoom-in-up" data-aos-duration="1500" src="img/가맹절차2.png" alt=""></li>
+                    <li><img data-aos="zoom-in-up" data-aos-duration="1900" src="img/가맹절차3.png" alt=""></li>
+                    <li><img data-aos="zoom-in-up" data-aos-duration="1500" src="img/가맹절차4.png" alt=""></li>
+                    <li><img data-aos="zoom-in-up" data-aos-duration="1900" src="img/가맹절차5.png" alt=""></li>
+                    <li><img data-aos="zoom-in-up" data-aos-duration="1000" src="img/가맹절차6.png" alt=""></li>
+                </ul>
+                <div data-aos="zoom-in-up" data-aos-duration="1500">
+                    <p>임대 평수 35평 이상 권장 / 당사가 규정하는 점포 시설 및 기기의 설치</p>
+                </div>
+            </section>
+
+
+            <section id="openPrice">
+                <h3>창업 비용</h3>
+                <img src="img/창업비용.png" alt="">
+                <p>ㆍ위 표와 금액은 지역과 점포환경에 따라 실제 지불금액과 다소 차이가 있을 수 있습니다.<br>
+                    ㆍ상·하수도 및 화장실 공사, 외부공사 및 철거, 오픈행사, 인·허가, 어닝, 외부테라스, CCTV, POS 임대 비용은 별도입니다.
+                </p>
+            </section>
+
+
 
             <footer id="footer">
-
+                <div>
+                    <p>(주)루호 ㅣ 대표: 김현규</p>
+                    <p>사업자등록번호 : 615-88-01774</p>
+                    <p>주소: 대구광역시 달서구 달구벌대로 1429-5, 3층</p>
+                    <p class="copy">COPYRIGHT© 2024 Luho Co., Ltd. All Rights Reserved.</p>
+                </div>
+                <ul>
+                    <li><img src="img/footer_luho.png" alt="루호 로고"></li>
+                    <li><img src="img/footer_thepho.png" alt="더포 로고"></li>
+                </ul>
             </footer>
 
         </main>
