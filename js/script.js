@@ -10,6 +10,11 @@ $(document).ready(function () {
         AOS.init();
     });
 
+    document.querySelectorAll("video").forEach(video => {
+    video.setAttribute("playsinline", "");
+});
+
+
     // Header Scroll Event
     $(function () {
         var prevScrollTop = 0;
