@@ -137,6 +137,17 @@ $(document).ready(function () {
         };
     });
 
+    //최초 로드 시 iframe 높이값 비율에 맞게 세팅
+    var $videoIframe = document.getElementById('video');
+    var responsiveHeight = $videoIframe.offsetWidth * 0.5625;
+    $videoIframe.setAttribute('height', responsiveHeight);
+
+    //브라우저 리사이즈 시 iframe 높이값 비율에 맞게 세팅
+    window.addEventListener('resize', function () {
+        responsiveHeight = $videoIframe.offsetWidth * 0.5625;
+        $videoIframe.setAttribute('height', responsiveHeight);
+    });
+
     // Swiper
     $(function () {
         var mainSwiper = new Swiper(".mainSwiper", {
@@ -153,62 +164,122 @@ $(document).ready(function () {
         });
 
         var appetizer = new Swiper(".appetizer", {
-            slidesPerView: 4,
+            slidesPerView: 1,
             spaceBetween: 30,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
                 loop: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,  //브라우저가 768보다 클 때
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,  //브라우저가 1024보다 클 때
+                    spaceBetween: 50,
+                },
             },
         });
 
         var special = new Swiper(".special", {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 30,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
                 loop: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,  //브라우저가 768보다 클 때
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,  //브라우저가 1024보다 클 때
+                    spaceBetween: 50,
+                },
             },
         });
 
         var noodle = new Swiper(".noodle", {
-            slidesPerView: 4,
+            slidesPerView: 1,
             spaceBetween: 30,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
                 loop: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,  //브라우저가 768보다 클 때
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,  //브라우저가 1024보다 클 때
+                    spaceBetween: 50,
+                },
             },
         });
 
         var noodleMix = new Swiper(".noodleMix", {
-            slidesPerView: 4,
+            slidesPerView: 1,
             spaceBetween: 30,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
                 loop: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,  //브라우저가 768보다 클 때
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,  //브라우저가 1024보다 클 때
+                    spaceBetween: 50,
+                },
             },
         });
 
         var rice = new Swiper(".rice", {
-            slidesPerView: 4,
+            slidesPerView: 1,
             spaceBetween: 30,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
                 loop: true,
             },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,  //브라우저가 768보다 클 때
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,  //브라우저가 1024보다 클 때
+                    spaceBetween: 50,
+                },
+            },
         });
 
         var juice = new Swiper(".juice", {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 30,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
                 loop: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,  //브라우저가 768보다 클 때
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,  //브라우저가 1024보다 클 때
+                    spaceBetween: 50,
+                },
             },
         });
 
@@ -251,7 +322,7 @@ $(document).ready(function () {
         });
 
         var newsList = new Swiper(".newsList", {
-            slidesPerView: 4,
+            slidesPerView: 1,
             autoplay: {
                 delay: 1500,
                 disableOnInteraction: false,
@@ -262,10 +333,24 @@ $(document).ready(function () {
             grid: {
                 rows: 2,
             },
-            spaceBetween: 30,
+            spaceBetween: 20,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,  //브라우저가 768보다 클 때
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,  //브라우저가 1024보다 클 때
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 4,  //브라우저가 1024보다 클 때
+                    spaceBetween: 30,
+                },
             },
         });
     });
