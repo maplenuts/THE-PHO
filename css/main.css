@@ -314,6 +314,7 @@ body {
 /* main_banner 영역 */
 #main {
    padding-top: 120px;
+   overflow: hidden;
 }
 
 #main_banner {
