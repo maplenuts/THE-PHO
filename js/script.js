@@ -9,6 +9,21 @@ $(document).ready(function () {
     document.addEventListener('DOMContentLoaded', function () {
         AOS.init();
     });
+    document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth > 427) {
+        AOS.init(); // AOS 초기화
+    }
+
+    window.addEventListener("resize", function () {
+        if (window.innerWidth <= 427) {
+            AOS.refreshHard(); // AOS 초기화 해제
+            AOS.init({ disable: true }); // AOS 비활성화
+        } else {
+            AOS.init(); // AOS 재활성화
+        }
+    });
+});
+
 
     // Header Scroll Event
     $(function () {
