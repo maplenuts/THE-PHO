@@ -514,14 +514,14 @@ body {
 
 #main_visual img {
    position: absolute;
-   top: 30%;
+   top: 25%;
    left: 50%;
    transform: translateX(-50%);
 }
 
 #main_visual p {
    position: absolute;
-   top: 51%;
+   top: 47%;
    left: 50%;
    transform: translateX(-50%);
    color: #fff;
@@ -589,6 +589,7 @@ body {
    height: 1080px;
    padding: 150px 10%;
    background: url(../img/bg_루아패밀리.jpg) no-repeat center / cover;
+   display: none;
 }
 
 .brandBtn {
@@ -755,6 +756,7 @@ body {
 
 /* story 영역 */
 #story {
+   display: none;
    width: 100%;
    padding: 100px 100px;
    position: relative;
@@ -933,6 +935,7 @@ body {
 
 /* how 영역 */
 #how {
+   display: block;
    background: #fff;
 }
 
@@ -971,9 +974,6 @@ body {
    content: '더포의 성공비결 02';
 }
 
-.how:nth-child(3) .how-R::before {
-   content: '더포의 성공비결 03';
-}
 
 .how-R {
    display: flex;
@@ -1323,7 +1323,7 @@ body {
    flex-direction: column;
    gap: 1%;
    height: max-content;
-   animation: marquee-img2 70s linear infinite reverse;
+   animation: marquee-img2 90s linear infinite reverse;
 }
 
 .rolling-img2 .rolling-img-track {
@@ -1331,7 +1331,7 @@ body {
    flex-direction: column;
    gap: 1%;
    height: max-content;
-   animation: marquee-img2 70s linear infinite;
+   animation: marquee-img2 90s linear infinite;
 }
 
 .rolling-img-track img {
@@ -1872,7 +1872,7 @@ body {
 #newPrd {
    width: 100%;
    padding: 100px 15%;
-   background: url(../img/bg_noodle.png) no-repeat center / cover;
+   background: url(../img/bg_noodle.png) no-repeat center / 110%;
    display: flex;
    gap: 4%;
    justify-content: center;
@@ -2207,6 +2207,7 @@ body {
    text-align: left;
    color: #fff;
    width: 50%;
+   padding-left: 70px;
 }
 
 .delivery-text h3 {
@@ -2249,6 +2250,7 @@ body {
    .delivery-text {
       width: 50%;
       margin-top: 50px;
+      padding: 0;
    }
 
    .delivery-text h3 {
@@ -2346,7 +2348,7 @@ body {
 
 #point-area {
    width: 100%;
-   height: 100vh;
+   height: 90vh;
    padding: 100px 4%;
    background: #fff;
    display: flex;
@@ -2510,11 +2512,13 @@ body {
 /* point-news */
 #point-news {
    width: 100%;
-   height: 100vh;
-   padding: 100px 10%;
+   height: 90vh;
+   padding: 100px 4%;
+   background: #fff;
+   display: flex;
+   gap: 4%;
+   justify-content: center;
    align-items: center;
-   background: #304674;
-   text-align: center;
 }
 
 #point-news .news-text::before {
@@ -2527,17 +2531,24 @@ body {
    background: var(--main-Orange);
 }
 
+.news-text span {
+   display: block;
+   font-size: 2.4rem;
+   font-weight: 700;
+   margin-top: 30px;
+}
+
 .news-text h3 {
    font-size: 4rem;
    font-weight: 700;
    line-height: 1.5;
-   color: #fff;
+   color: #111;
    padding: 12px 0;
 }
 
-.news-text h3+p {
-   color: #fff;
-   font-size: 1.8rem;
+.news-text p {
+   font-size: 2rem;
+   margin-bottom: 20px;
 }
 
 
