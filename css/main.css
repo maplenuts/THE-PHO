@@ -2629,6 +2629,11 @@ body {
       width: 310px;
       height: 350px;
       border-radius: 40px;
+      order: 2;
+   }
+
+   .news-text {
+      order: 1;
    }
 
    .how-L3 img {
