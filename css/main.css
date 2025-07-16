@@ -2619,7 +2619,7 @@ body {
 }
 
 @media (max-width:479px) {
-   #point-news {padding: 80px 10%; height: 180vh;}
+   #point-news {padding: 80px 10%; height: 100vh;}
 }
 
 
