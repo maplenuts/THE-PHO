@@ -475,9 +475,9 @@ body {
 }
 
    .mainSwiper p {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       left: 6%;
-      top: 7%;
+      top: 6%;
    }
 
    .swiper-button-next:after,
@@ -1924,7 +1924,9 @@ body {
    }
 }
 
-@media (max-width:479px) {}
+@media (max-width:479px) {
+
+}
 
 
 .wrapper {
@@ -2623,7 +2625,7 @@ body {
 }
 
 @media (max-width:479px) {
-   #point-news {padding: 80px 10%; height: 100vh;}
+   #point-news {padding: 80px 10%; height: 130vh;}
 }
 
 
