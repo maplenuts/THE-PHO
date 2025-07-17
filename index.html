@@ -82,8 +82,7 @@
         <div class="contactForm">
             <img class="closeBtn" src="img/closeBtn.png" alt="닫기" onclick="closeForm()">
 
-            <form id="Form" method="POST" action="https://formsubmit.co/colorbrain2024@naver.com"
-                onsubmit="alert('제출이 완료되었습니다!'); closeForm();">
+            <<form id="Form" method="POST" action="https://formsubmit.co/colorbrain2024@naver.com">
                 <h2>더포 창업문의</h2>
 
                 <div class="formGroup">
@@ -177,14 +176,14 @@
 
                 <button class="contactBtn" type="submit">문의하기</button>
             </form>
-                        <script>
+            <script>
                 document.getElementById("Form").addEventListener("submit", function (e) {
                     e.preventDefault(); // 기본 이동 막기
 
                     const form = e.target;
                     const formData = new FormData(form);
 
-                    fetch("https://formsubmit.co/yourmail@naver.com", {
+                    fetch("https://formsubmit.co/colorbrain2024@naver.com", {
                         method: "POST",
                         body: formData
                     }).then(response => {
