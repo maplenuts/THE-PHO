@@ -80,22 +80,22 @@
 
         <div class="contactForm">
             <img class="closeBtn" src="img/closeBtn.png" alt="닫기" onclick="closeForm()">
-            <iframe name="frAttachFiles" style="display:none;"></iframe>
-            <form id="Form" method="post" data-email="colorbrain2024@naver.com"
-                action="https://script.google.com/macros/s/AKfycbxkt6vDh7KZHpkl4AihyliItYYig-f9qXYTkV8A8tdbmNOGs2JvftL-u4UAR_ei2Ggs/exec"
-                target="frAttachFiles" onsubmit="alert( '제출이 완료되었습니다!' ); closeForm(); return false;">
+
+            <form id="Form" method="POST" action="https://formsubmit.co/colorbrain2024@naver.com"
+                onsubmit="alert('제출이 완료되었습니다!'); closeForm();">
                 <h2>더포 창업문의</h2>
+
                 <div class="formGroup">
-                    <input type="text" id="name" name="name" title="성함" placeholder="성함을 입력해주세요" required><br>
+                    <input type="text" id="name" name="name" placeholder="성함을 입력해주세요" required>
                 </div>
                 <div class="formGroup">
-                    <input type="tel" id="phone" name="phone" title="연락처(숫자만)" placeholder="연락처를 입력해주세요" required><br>
+                    <input type="tel" id="phone" name="phone" placeholder="연락처를 입력해주세요" required>
                 </div>
                 <div class="formGroup">
-                    <input type="text" id="place" name="place" title="희망지역" placeholder="희망지역을 입력해주세요" required><br>
+                    <input type="text" id="place" name="place" placeholder="희망지역을 입력해주세요" required>
                 </div>
                 <div class="formGroup">
-                    <textarea id="message" name="message" title="문의내용" placeholder="문의내용을 입력해주세요"></textarea><br>
+                    <textarea id="message" name="message" placeholder="문의내용을 입력해주세요"></textarea>
                 </div>
 
                 <div class="privacy">
@@ -160,16 +160,25 @@
                 </div>
 
                 <ul>
-                    <li class="agree"><input type="checkbox" id="is_agree" name="is_agree" checked="checked"><label
-                            for="is_agree">개인정보처리방침에 동의합니다.</label></li>
-                    <li class="agree"><input type="checkbox" id="is_market" name="is_market" checked="checked"><label
-                            for="is_market">마케팅활용에 동의합니다.</label></li>
+                    <li class="agree">
+                        <input type="checkbox" id="is_agree" name="is_agree" checked>
+                        <label for="is_agree">개인정보처리방침에 동의합니다.</label>
+                    </li>
+                    <li class="agree">
+                        <input type="checkbox" id="is_market" name="is_market" checked>
+                        <label for="is_market">마케팅활용에 동의합니다.</label>
+                    </li>
                 </ul>
+
+                <!-- Formsubmit 옵션: 스팸방지, 제목 설정 등 -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="더포 홈페이지에서 문의가 도착했습니다!">
 
                 <button class="contactBtn" type="submit">문의하기</button>
             </form>
-            <iframe name="frAttachFiles" style="display:none;"></iframe>
         </div>
+
+
 
 
 
@@ -212,7 +221,8 @@
 
             <section id="main_visual">
                 <div class="dim"></div>
-                <video src="video/video_cooking.mp4" muted autoplay loop playsinline webkit-playsinline preload="auto"></video>
+                <video src="video/video_cooking.mp4" muted autoplay loop playsinline webkit-playsinline
+                    preload="auto"></video>
                 <img data-aos="fade-up" data-aos-duration="1000" src="img/txt_the only.png" alt="">
                 <p data-aos="fade-up" data-aos-duration="1500">더포(THE PHO)는 베트남 음식 전문점으로,<br>
                     현지에서의 깊은 그 맛을 계승하면서도<br>
@@ -911,7 +921,8 @@
 
             <section id="point-waiting">
                 <div class="dim"></div>
-                <video src="video/video_waiting.mp4" muted autoplay loop playsinline webkit-playsinline preload="auto"></video>
+                <video src="video/video_waiting.mp4" muted autoplay loop playsinline webkit-playsinline
+                    preload="auto"></video>
                 <div class="point-text" data-aos="fade-down" data-aos-duration="1500">
                     <h3>남녀노소 나이불문!<br>
                         더포는 365일 웨이팅 중
