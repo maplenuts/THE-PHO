@@ -471,8 +471,8 @@ body {
    }
 
    .mainSwiper p::before {
-   font-size: 1.4rem;
-}
+      font-size: 1.4rem;
+   }
 
    .mainSwiper p {
       font-size: 2.2rem;
@@ -1400,10 +1400,11 @@ body {
    .rolling-img-track img {
       width: 140px;
    }
+
    .rolling-img .rolling-img-track {
       animation: marquee-img2 50s linear infinite reverse;
    }
-   
+
    .rolling-img2 .rolling-img-track {
       animation: marquee-img2 50s linear infinite;
    }
@@ -1413,6 +1414,7 @@ body {
    #recommend {
       height: 500px;
    }
+
    .rolling-img .rolling-img-track {
       animation: marquee-img2 30s linear infinite reverse;
    }
@@ -1924,9 +1926,7 @@ body {
    }
 }
 
-@media (max-width:479px) {
-
-}
+@media (max-width:479px) {}
 
 
 .wrapper {
@@ -1976,6 +1976,7 @@ body {
       font-size: 1.5rem;
       padding: 6px 0;
    }
+
    .marquee-text-track p::after {
       padding: 0 10px;
    }
@@ -2592,16 +2593,31 @@ body {
       justify-content: center;
       align-items: center;
    }
+
+   .news-text h3 {
+      font-size: 3rem;
+   }
+
+   .news-text p {
+      font-size: 1.8rem;
+   }
+
    .how-L3 {
       margin-left: 0;
       margin-bottom: 50px;
    }
+
    .how-L3 {
       width: 480px;
    }
 }
 
 @media (max-width:834px) {
+   #point-news {
+      height: 110vh;
+      padding: 0 15%;
+   }
+
    #point-news .news-text::before {
       font-size: 1.6rem;
    }
@@ -2618,19 +2634,22 @@ body {
       color: #111;
       font-size: 1.6rem;
    }
+
    .news-text br {
       display: none;
    }
-   .news-text p {word-break: keep-all;}
+
+   .news-text p {
+      word-break: keep-all;
+   }
 }
 
 @media (max-width:479px) {
-   #point-news {padding: 80px 10%; height: 130vh;}
-}
+   #point-news {
+      padding: 80px 10%;
+      height: 130vh;
+   }
 
-
-
-@media (max-width:479px) {
    .how-L3 {
       width: 310px;
       height: 350px;
@@ -2752,26 +2771,52 @@ body {
 }
 
 @media (max-width:1200px) {
-   #point-royalty {padding: 120px 4%;}
+   #point-royalty {
+      padding: 120px 4%;
+   }
 }
 
 @media (max-width:834px) {
-   #point-royalty {padding: 120px 15%;}
+   #point-royalty {
+      padding: 120px 15%;
+   }
+
    .royalty-list {
       grid-template-columns: 1fr;
       gap: 12px;
    }
 
-   #point-royalty .royalty-text::before {font-size: 1.6rem;}
-   .royalty-text h3 {font-size: 2.6rem;}
-   .royalty-list li p {font-size: 2rem; margin-bottom: 16px;}
-   .royalty-list li span {font-size: 1.6rem; word-break: keep-all;}
-   .royalty-list li span br {display: none;}
+   #point-royalty .royalty-text::before {
+      font-size: 1.6rem;
+   }
+
+   .royalty-text h3 {
+      font-size: 2.6rem;
+   }
+
+   .royalty-list li p {
+      font-size: 2rem;
+      margin-bottom: 16px;
+   }
+
+   .royalty-list li span {
+      font-size: 1.6rem;
+      word-break: keep-all;
+   }
+
+   .royalty-list li span br {
+      display: none;
+   }
 }
 
 @media (max-width:479px) {
-   #point-royalty {padding: 100px 6%;}
-   .royalty-list li span {font-size: 1.4rem;}
+   #point-royalty {
+      padding: 100px 6%;
+   }
+
+   .royalty-list li span {
+      font-size: 1.4rem;
+   }
 }
 
 
@@ -2846,14 +2891,19 @@ body {
 }
 
 @media (max-width:479px) {
-   #process {padding: 80px 10%;}
+   #process {
+      padding: 80px 10%;
+   }
+
    #process ul li {
       width: 100%;
       border-radius: 12px;
    }
+
    #process ul li img {
       width: 300px;
    }
+
    #process ul {
       display: grid;
       grid-template-columns: 1fr;
@@ -2895,16 +2945,35 @@ body {
 
 
 @media (max-width:834px) {
-   #openPrice {padding: 80px 4%;}
-   #openPrice h3::before {font-size: 1.6rem;}
-   #openPrice h3 {font-size: 3.6rem;}
-   #openPrice p {font-size: 1.5rem;}
-   #openPrice img {border-radius: 20px;}
+   #openPrice {
+      padding: 80px 4%;
+   }
+
+   #openPrice h3::before {
+      font-size: 1.6rem;
+   }
+
+   #openPrice h3 {
+      font-size: 3.6rem;
+   }
+
+   #openPrice p {
+      font-size: 1.5rem;
+   }
+
+   #openPrice img {
+      border-radius: 20px;
+   }
 }
 
 @media (max-width:479px) {
-   #openPrice img {border-radius: 12px;}
-   #openPrice p {font-size: 1.4rem;}
+   #openPrice img {
+      border-radius: 12px;
+   }
+
+   #openPrice p {
+      font-size: 1.4rem;
+   }
 }
 
 
@@ -2935,17 +3004,36 @@ body {
 }
 
 @media (max-width:1200px) {
-   #footer {padding: 80px 10%;}
+   #footer {
+      padding: 80px 10%;
+   }
 }
 
 @media (max-width:834px) {
-   #footer {flex-direction: column;}
-   #footer ul {order: 1; margin-bottom: 50px;}
-   #footer div {order: 2;}
+   #footer {
+      flex-direction: column;
+   }
+
+   #footer ul {
+      order: 1;
+      margin-bottom: 50px;
+   }
+
+   #footer div {
+      order: 2;
+   }
 }
 
 @media (max-width:479px) {
-   #footer ul {gap: 12px;}
-   #footer ul li img {width: 90%;}
-   #footer div {font-size: 1.4rem;}
+   #footer ul {
+      gap: 12px;
+   }
+
+   #footer ul li img {
+      width: 90%;
+   }
+
+   #footer div {
+      font-size: 1.4rem;
+   }
 }
